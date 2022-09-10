@@ -1,46 +1,49 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print pairs of double digit combos
+ *
+ * Decription: print pairs of double digit combos
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int p = 48, q = 48, y = 48, x = 49;
+	int i, j, k, m;
 
-	while (p < 58)
+	i = 48;
+	while (i < 58)
 	{
-		while (q < 58)
+		j = 48;
+		while (j < 58)
 		{
-			while (y < 58)
+			m = j + 1;
+			k = i;
+			while (k < 58)
 			{
-				while (x < 58)
+				while (m < 58)
 				{
-					putchar(p);
-					putchar(q);
-					putchar(' ');
-					putchar(y);
-					putchar(x);
-					if (!(p == 57 && q == 56 && y == 57 && x == 57))
+					putchar(i);
+					putchar(j);
+					putchar(32);
+					putchar(k);
+					putchar(m);
+					if (i < 57 || j < 56 || k < 57 || m < 577)
 					{
-						putchar(',');
-						putchar(' ');
+						putchar(44);
+						putchar(32);
 					}
-					x++;
+					m++;
 				}
-				y++;
-				x = 48;
+				m = 48;
+				k++;
 			}
-			q++;
-			q = p;
-			x = q + 1;
+			j++;
 		}
-		p++;
-		q = 48;
-		y = p;
-		x = q + 1;
+		i++;
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }
