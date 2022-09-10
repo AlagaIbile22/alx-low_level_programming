@@ -1,49 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - print pairs of double digit combos
- *
- * Desciption: print pairs of double digit combos
+ * main - main - two pairs of numbers that do not repeat
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i, j, k, m;
+	int i, j;
 
-	i = 48;
-	while (i < 58)
+	for (j = 0; j <= 99; j++)
 	{
-		j = 48;
-		while (j < 58)
+		for (i = j; i <= 99; i++)
 		{
-			m = j + 1;
-			k + i;
-			while (k < 58)
+			if (i != j)
 			{
-				while (m < 58)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(32);
-					putchar(k);
-					putchar(m);
-					if (i < 57 || j < 56 || k < 57 || m < 57)
-					{
-						putchar(44);
-						putchar(32);
-					}
-					m++;
-				}
-				m = 48;
-				k++;
+				putchar(j / 10 + 48);
+				putchar(j % 10 + 48);
+				putchar(' ');
+				putchar(i / 10 + 48);
+				putchar(i % 10 + 48);
 			}
-			j++;
+			if (j * 100 + i != 9899)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		i++;
 	}
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
