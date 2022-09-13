@@ -57,11 +57,11 @@ int _abs(int);
 
 /**
  * print_last_digit - print last digit of integer
- * @int: integer
+ * @nld: number's last digit result
  * Return: last digit of number
  */
 
-int print_last_digit(int);
+int print_last_digit(int nld);
 
 /**
  * jack_bauer - print every minute of a day
