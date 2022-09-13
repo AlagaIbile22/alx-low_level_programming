@@ -1,9 +1,10 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_to_98 - print numbers n to 98
  * @n: integer argument
+ * Return: Always 0 (Success)
  */
 
 void print_to_98(int n)
@@ -19,9 +20,9 @@ void print_to_98(int n)
 		printf("%d, ", n);
 		n--;
 	}
-	
-	if (n == 98)
-		printf("%d, ", n);
 
-	printf('\n');
+	if (n == 98)
+		printf("%d", n);
+
+	printf("\n");
 }
