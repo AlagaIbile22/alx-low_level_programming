@@ -6,7 +6,7 @@
  * Return: A pointer to the changed string
  */
 
-char *string_toupper(char *str);
+char *string_toupper(char *str)
 {
 	int index = 0;
 

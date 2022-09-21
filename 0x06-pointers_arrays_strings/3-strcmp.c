@@ -7,7 +7,7 @@
  * Return: 0 if s1 == s2, otherwise, another number
  */
 
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int i = 0, op = 0;
 
