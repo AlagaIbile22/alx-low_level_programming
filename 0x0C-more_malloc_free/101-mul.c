@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 		result[i] = 0;
 	for (len1 = len1 - 1; len1 >= 0; len1--)
 	{
-		digit1 = s1[1en1] - '0';
+		digit1 = s1[len1] - '0';
 		carry = 0;
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
